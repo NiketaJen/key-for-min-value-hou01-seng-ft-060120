@@ -8,6 +8,8 @@ def key_for_min_value(hash)
   while count < hash.length do
   if lowest_value < hash[count]
    lowest_value = hash[count]
+ else
+   lowest_value=nil
    
   end
   count += 1
