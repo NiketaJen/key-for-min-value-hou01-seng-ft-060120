@@ -2,15 +2,17 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(hash)
-  new_hash = {}
+  count = 0
   lowest_value = 100
   
-  hash.each {|k, v|}
-  if v < lowest_value
-    lowest_value = v
-    lowest_key = k
+  while count < hash.length do
+  if lowest_value < hash[count]
+   lowest_value = hash[count]
+   
+  end
+  count += 1
+end
   
-  new_hash << lowest_key
+lowest_key
 end
-  new_hash
-end
+  
