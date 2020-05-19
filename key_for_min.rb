@@ -5,10 +5,10 @@ def key_for_min_value(hash)
   new_hash = {}
   lowest_value = 100
   
-  hash.each {|key, value|}
+  hash.each {|k, v|}
   if value < lowest_value
-    lowest_value = value
-    lowest_key = key
+    lowest_value = v
+    lowest_key = k
   
   new_hash << lowest_key
 end
