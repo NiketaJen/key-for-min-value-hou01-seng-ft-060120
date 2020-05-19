@@ -9,9 +9,8 @@ def smallest_hash_value(hash)
   if value < lowest_value
     lowest_value = value
     lowest_key = key
-  end
+  
   new_hash << lowest_key
 end
   new_hash
-end
 end
