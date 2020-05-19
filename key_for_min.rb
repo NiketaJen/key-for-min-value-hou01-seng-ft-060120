@@ -6,7 +6,7 @@ def key_for_min_value(hash)
   lowest_value = 100
   
   hash.each {|k, v|}
-  if value < lowest_value
+  if v < lowest_value
     lowest_value = v
     lowest_key = k
   
