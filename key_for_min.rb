@@ -14,3 +14,4 @@ def smallest_hash_value(hash)
 end
   new_hash
 end
+end
